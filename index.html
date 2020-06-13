@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Ted Yarmoski's Portfolio</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript
+      ><link rel="stylesheet" href="assets/css/noscript.css"
+    /></noscript>
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="images/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="images/favicon-16x16.png"
+    />
+    <link rel="manifest" href="images/site.webmanifest" />
+  </head>
+  <body class="is-preload">
+    <!-- Wrapper -->
+    <div id="wrapper">
+      <!-- Header -->
+      <header id="header">
+        <div class="inner">
+          <!-- Logo -->
+          <a href="index.html" class="logo">
+            <span class="symbol"></span
+            ><span class="title">Ted Yarmoski : Computer Science @ UCLA</span>
+          </a>
+
+          <!-- Nav
+								<nav>
+									<ul>
+										<li><a href="#menu">Menu</a></li>
+									</ul>
+								</nav> -->
+        </div>
+      </header>
+
+      <!-- Menu -->
+      <!-- <nav id="menu">
+						<h2>Menu</h2>
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="generic.html">Ipsum veroeros</a></li>
+							<li><a href="generic.html">Tempus etiam</a></li>
+							<li><a href="generic.html">Consequat dolor</a></li>
+							<li><a href="elements.html">Elements</a></li>
+						</ul>
+					</nav> -->
+
+      <!-- Main -->
+      <div id="main">
+        <div class="inner">
+          <header>
+            <h1>Welcome to my portfolio.</h1>
+            <p>
+              You can find some of my projects below. Get in touch with me via
+              <a id="desc-email-copy" onclick="copyFunc()">email</a>.
+            </p>
+          </header>
+          <section class="tiles">
+            <article class="style2">
+              <span class="image">
+                <img src="images/picky-stock.jpg" alt="" />
+              </span>
+              <a target="" href="picky.html">
+                <h2>Picky!</h2>
+                <div class="content">
+                  <p>
+                    A web application that utilizes the Yelp Fusion API to help
+                    you and your friends decide what to do.
+                  </p>
+                </div>
+              </a>
+            </article>
+            <article class="style1">
+              <span class="image">
+                <img src="images/colorfight-stock-3.jpg" alt="" />
+              </span>
+              <a href="colorfight.html">
+                <h2>Colorfight AI</h2>
+                <div class="content">
+                  <p>
+                    An artificial intelligence designed for the AInvasion
+                    hackathon. Makes intelligent decisions when playing the game
+                    "Colorfight."
+                  </p>
+                </div>
+              </a>
+            </article>
+            <article class="style3">
+              <span class="image">
+                <img src="images/moveit-stock.jpg" alt="" />
+              </span>
+              <a href="moveit.html">
+                <h2>MoveIt</h2>
+                <div class="content">
+                  <p>
+                    A delivery logistics system built in C++. Given
+                    OpenStreetMap data, this system finds the most efficient
+                    route to one or more delivery points specified by the user.
+                  </p>
+                </div>
+              </a>
+            </article>
+            <article class="style6">
+              <span class="image">
+                <img src="images/bacteria1.jpg" alt="" />
+              </span>
+              <a href="bacterium.html">
+                <h2>Bacterium-Coliseum</h2>
+                <div class="content">
+                  <p>
+                    A graphics-enabled game that vaguely resembles classic
+                    arcade shooters.
+                  </p>
+                </div>
+              </a>
+            </article>
+            <article class="style5">
+              <span class="image">
+                <img src="images/news-man2.jpg" alt="" />
+              </span>
+              <a href="newsbuzz.html">
+                <h2>NewsBuzz</h2>
+                <div class="content">
+                  <p>
+                    Auto-posts the most relevant words in the headlines to the
+                    News Buzz Website once a day.
+                  </p>
+                </div>
+              </a>
+            </article>
+          </section>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <footer id="footer">
+        <div class="inner">
+          <section>
+            <h2>Contact</h2>
+            <ul class="icons">
+              <li>
+                <a
+                  target="_blank"
+                  href="https://github.com/Yarmoski"
+                  class="icon brands style2 fa-github"
+                  ><span class="label">GitHub</span></a
+                >
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  href="https://www.linkedin.com/in/tedyarmoski/"
+                  class="icon brands style2 fa-linkedin"
+                  ><span class="label">LinkedIn</span></a
+                >
+              </li>
+              <li>
+                <a
+                  href="mailto:ted@yarmoski.com"
+                  class="icon solid style2 fa-envelope"
+                  ><span class="label">Email</span></a
+                >
+              </li>
+            </ul>
+          </section>
+          <ul class="copyright">
+            <li>Ted@Yarmoski.com</li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+      async function copyFunc() {
+        navigator.clipboard.writeText("Ted@Yarmoski.com");
+        document.getElementById("desc-email-copy").innerText = "email (copied)";
+        setTimeout(() => {
+          document.getElementById("desc-email-copy").innerText = "email";
+        }, 10000);
+      }
+    </script>
+  </body>
+</html>
